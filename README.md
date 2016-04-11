@@ -8,3 +8,8 @@ Program to generating the first n Fibonacci numbers F(n), printing ...
   * "BuzzFizz" when F(n) is prime.
   * the value F(n) otherwise.
 
+## Running script
+
+```bash
+chmod +x swiftScript.py
+```
