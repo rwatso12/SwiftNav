@@ -51,6 +51,14 @@ def isBuzzFizz(n):
 	    		return False
 	print "BuzzFizz"
 	return True
+
+'''
+Generate Fib sequence using 
+Binet's formual. 
+'''
+phi = (1 + 5**0.5) / 2
+def fib(n):
+	return int(round((phi**n - (1-phi)**n) / 5**0.5))
 	
 
 '''
@@ -71,12 +79,11 @@ def main(argv):
 	parser.add_option('-n', type="int" ,action='store', dest = "num", help='''Integer used to generate Fib sequence''')
 	(opts, args) = parser.parse_args()
 	for num in range(1,opts.num):
-		if any( (isBuzz(num) , isFizz(num) , isBuzzFizz(num))):
+		fibNum = fib(num)
+		if any( (isBuzzFizz(fibNum), isBuzz(fibNum), isFizz(fibNum)) ):
 			pass
 		else:
-			print num 
-
+			print fibNum 
 
 if __name__=="__main__":
 	main(sys.argv[1:])
-
