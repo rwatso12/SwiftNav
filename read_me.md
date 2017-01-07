@@ -11,20 +11,20 @@ Program to generating the first n Fibonacci numbers F(n), printing ...
 ## Running the script
 To run the script first cd into the directory and change the permision of the file to executable
 ```bash
-chmod +x swiftScript.py
+chmod +x fizz_buzz.py
 ```
 
 Next, you can run the script by simply,
 
 ```bash 
-./swiftScript.py -n 100
+./fizz_buzz.py -n 100
 ```
 where n can be any integer value. 
 
 For the help documentation, you can run,
 
 ```bash 
-./swiftScript.py -h
+./fizz_buzz.py -h
 ```
 which will pop up as 
 
